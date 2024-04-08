@@ -342,38 +342,12 @@ body {
 		<br>
 		<br>
 		<label for="sifre">Password:</label><br>
-		<input type="password" id = "sifre" name="sifre" required><br><span class="hide error">❎</span><span class="hide success">✅</span>
-		<br>
-		<label for="resifre">Password Again:</label><br>
-		<input type="password" id = "resifre" name="resifre" required><br><span class="hide error">❎</span><span class="hide success">✅</span><br><br>
-
-		 <input class="btn-1" type="submit" id="submit" name="submit" value="Sign Up" onclick="<script src='./js/onSuccess.js'> </script>">
-<br>
+		<input type="password" id = "sifre" name="sifre" required><br>
+		 <input class="btn-1" type="submit" id="submit" name="submit" value="Sign Up">
 		
 		
 		</form>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-<script type="text/javascript">
 
-$(function(){
-	
-	$('input[name=resifre]').on('keyup', function(){
-		var pwd = $('input[name=sifre]').val();
-		var confirm_pwd = $(this).val();
-		$('span.success').hide();
-		$('span.error').hide();
-		if( pwd == confirm_pwd ){
-			$('span.success').show();
-		}
-		else {
-			$('span.error').show();
-		}
-		
-	});
-	
-});
-
-</script>
 
 	</body>
 </html>
